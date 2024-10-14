@@ -41,18 +41,17 @@ Here are some of the key skills I have acquired:
 - **Email**: [ankitpandey2005k@gmail.com](mailto:ankitpandey2005k@gmail.com)
 
 ## Profiles
-- [LinkedIn](https://www.linkedin.com/in/amaan-patel-4b2a73287/)
-- [GitHub](https://github.com/AmaanPatel786)
-- [HackerRank](https://www.hackerrank.com/profile/amaanpatel038)
-- [LeetCode](https://leetcode.com/u/Jems123/)
-- [Kaggle](https://www.kaggle.com/jems123)
+- [LinkedIn](https://www.linkedin.com/in/ankit-pandey-84176b287/)
+- [GitHub](https://github.com/ankit24067)
+- [HackerRank](https://www.hackerrank.com/profile/ankitpandey2005k)
+- [LeetCode](https://leetcode.com/u/ankietpandeey/)
 
 ---
 
 ### How to Run the Portfolio Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/AmaanPatel786/MyPortFolio.git
+   https://github.com/ankit24067/My-Portfolio.git
 2. Navigate to the Project Folder:
-   cd MyPortFolio
+   cd My-Portfolio
 3. Open the index.html file in your browser to view the portfolio locally.
