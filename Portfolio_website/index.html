@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ankit - Portfolio</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+      }
+
+      body {
+         background-color: rgb(0, 0, 27);
+         color: white;
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      nav {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         height: 80px;
+         background-color: rgb(95, 55, 215);
+         box-shadow: 0 0 10px rgb(95, 55, 215);
+      }
+
+      nav ul {
+         display: flex;
+         justify-content: center;
+      }
+
+      nav ul li {
+         list-style: none;
+         margin: 0 30px;
+      }
+
+      nav ul li a {
+         text-decoration: none;
+         color: white;
+      }
+
+      nav ul li a:hover {
+         color: rgb(110, 110, 238);
+         font-size: 1.02rem;
+      }
+
+      .left {
+         font-size: 1.5rem;
+      }
+
+      .firstsection {
+         display: flex;
+         justify-content: space-around;
+         margin: 50px 0;
+         align-items: center;
+      }
+
+      .secondsection {
+         display: flex;
+         justify-content: space-around;
+         margin: 180px 0;
+      }
+
+      .leftsection {
+         width: 40%;
+         font-size: 2rem;
+      }
+
+      .leftsection2 {
+         width: 50%;
+         font-size: 1.5rem;
+         align-items: center;
+         justify-content: center;
+         margin-top: 225px;
+         margin-left: 40px;
+      }
+
+      .rightsection {
+         width: 30%;
+      }
+
+      .rightsection2 {
+         width: 43%;
+      }
+
+      .rightsection2 .education {
+         justify-content: center;
+         align-items: center;
+         margin: 0 120px;
+      }
+
+      h3 {
+         margin: 0 120px;
+      }
+
+      .education h3 {
+         font-size: 2rem;
+      }
+
+      .rightsection img {
+         width: 70%;
+      }
+
+      .purple {
+         color: rgb(164, 96, 227);
+      }
+
+      .col {
+         color: rgb(234, 130, 92);
+      }
+
+      /* Adjusted alignment for the timeline line and dot */
+      .timeline-items::before {
+         content: "";
+         position: absolute;
+         width: 5px;
+         height: 100%;
+         background-color: rgb(141, 43, 232);
+         left: 54%;
+         transform: translateX(-50%);
+         z-index: 2;
+      }
+
+      .timeline-items {
+         max-width: 1400px;
+         margin: auto;
+         display: flex;
+         flex-wrap: wrap;
+         position: relative;
+      }
+
+      .timeline-item {
+         position: relative;
+         margin: 10px 30px;
+         width: 80%;
+      }
+
+      .timeline-dot {
+         height: 20px;
+         width: 20px;
+         background-color: rgb(141, 43, 232);
+         position: absolute;
+         left: 50%;
+         transform: translateX(-50%);
+         border-radius: 50%;
+         top: 10px;
+         box-shadow: 0 0 25px rgb(141, 43, 232), 0 0 50px rgb(141, 43, 232);
+         z-index: 2;
+      }
+
+      .timeline-item:nth-child(odd) {
+         padding-right: calc(50% + 40px);
+         text-align: right;
+      }
+
+      .timeline-item:nth-child(even) {
+         padding-left: calc(50% + 40px);
+      }
+
+      .timeline-date {
+         font-size: 20px;
+         font-weight: 800;
+         margin: 6px 0 15px;
+      }
+
+      .timeline-content {
+         border: 3px solid rgb(141, 43, 232);
+         padding: 30px 25px;
+         border-radius: 4rem;
+         box-shadow: 0 0 10px rgb(141, 43, 232);
+         cursor: pointer;
+         transition: 0.3s ease-in-out;
+      }
+
+      .timeline-content h5 {
+         font-size: 20px;
+         font-weight: 500;
+      }
+
+      .timeline-content:hover {
+         transform: scale(1.05);
+         box-shadow: 0 0 25px rgb(141, 43, 232);
+      }
+
+      ::-webkit-scrollbar {
+         width: 15px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+         background-color: rgb(141, 43, 232);
+      }
+
+      ::-webkit-scrollbar-track {
+         background-color: rgb(141, 43, 232);
+      }
+
+      .thirdsection {
+         margin: 50px;
+      }
+
+      .thirdsection h4 {
+         font-size: 1.5rem;
+
+      }
+
+      .thirdsection .box {
+         background-color: rgb(141, 43, 232);
+         width: 80vw;
+         height: 2px;
+         margin: 55px 0;
+         justify-content: center;
+         margin-left: 80px;
+         display: flex;
+      }
+
+      .thirdsection .vertical {
+         height: 90px;
+         width: 1px;
+         background-color: rgb(141, 43, 232);
+         margin: 0 100px;
+      }
+
+      .thirdsection .vertical-title {
+         position: relative;
+         top: 75px;
+         width: 150px;
+      }
+
+      .thirdsection .vertical-desc {
+         position: relative;
+         width: 130px;
+         /* height: 150; */
+         top: 86px;
+         margin: 5px;
+         padding: 10px;
+         border: 2px solid rgb(141, 43, 232);
+         box-shadow: 0 0 10px rgb(141, 43, 232);
+         border-radius: 3rem;
+         /* transition: 0.3s ease-in-out; */
+         cursor: pointer;
+         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+      }
+
+      .thirdsection .vertical-desc:hover {
+         transform: scale(1.05);
+         box-shadow: 0 0 25px rgb(141, 43, 232); /* Added hover effect */
+      }
+
+      .vertical-desc ul li {
+         list-style: none;
+         margin: 7px;
+         
+      }
+
+      .fourthsection {
+         margin-top: 500px;
+      }
+
+      .fourthsection .box {
+         background-color: rgb(141, 43, 232);
+         width: 80vw;
+         height: 2px;
+         margin: 55px 0;
+         justify-content: center;
+         margin-left: 80px;
+         display: flex;
+      }
+
+      .fourthsection h4 {
+         font-size: 1.5rem;
+         margin: 50px;
+
+      }
+
+      .fourthsection .vertical {
+         height: 90px;
+         width: 1px;
+         background-color: rgb(141, 43, 232);
+         margin: 0 160px;
+      }
+
+      .fourthsection .vertical-title {
+         position: relative;
+         top: 75px;
+         width: 150px;
+      }
+
+      .fourthsection .vertical-desc {
+         position: relative;
+         width: 280px;
+         /* height: 200; */
+         top: 86px;
+         margin: 10px;
+         padding: 10px;
+         border: 2px solid rgb(141, 43, 232);
+         box-shadow: 0 0 10px rgb(141, 43, 232);
+         border-radius: 3rem;
+         cursor: pointer;
+         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+
+         
+      }
+      .fourthsection .vertical-desc:hover {
+         transform: scale(1.05);
+         box-shadow: 0 0 25px rgb(141, 43, 232); /* Added hover effect */
+      }
+
+      footer{
+         /* margin-bottom: 0px; */
+         background-color: rgb(44, 4, 163);
+         box-shadow: 0 0 rgb(63, 17, 200);
+         /* height: 150px; */
+         margin-top: 560px;
+      }
+
+      .footer{
+         display: flex;
+         margin: 23px 122px;
+         font-size: 20px;
+         justify-content: space-evenly;  
+         }
+         .footer ul li{
+            list-style: none;
+            display: flex;
+         }
+         .footer .first{
+            margin: 10px;
+         }
+         footer .second ul li{
+            margin: 15px;
+            
+            
+         }
+         .footer>div{
+            width: 223px;
+         }
+         footer .footer-rights{
+            text-align: center;
+            color: grey;
+         }
+         
+   </style>
+</head>
+
+<body>
+   <header>
+      <nav>
+         <div class="left">Ankit Pandey</div>
+         <div class="right">
+            <ul>
+               <li><a href="#Home">Home</a></li>
+               <li><a href="#About">About</a></li>
+               <li><a href="#Skills">Skills</a></li>
+               <li><a href="#Projects">Projects</a></li>
+               <li><a href="#Contact Me">Contact Me</a></li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+   <main>
+      <section class="firstsection" id="Home">
+         <div class="leftsection">
+            <h5>Hey, it's <span class="purple">Ankit</span></h5>
+            <p>I am a <span class="purple" id="element"></span></p>
+            <!-- <div class="btn">
+               <button type="button" resume</button>
+               <button type="button"><a href="https://github.com/ankit24067"></a>Visit Github</button>
+
+            </div> -->
+         </div>
+         <div class="rightsection">
+            <div class="pic">
+               <img src="ds.jpg" alt="datascience">
+               <img src="webdev.jpg" alt="">
+            </div>
+         </div>
+      </section>
+
+      <section class="secondsection" id="About">
+         <div class="leftsection2">
+            <p>A graduating student with a focus on quantitative exploration and keen to make a career in data-driven
+               fields and web development, currently pursuing Bachelors of Science in Data Science and Business
+               Intelligence at Patkar Varde College, Mumbai.</p>
+         </div>
+         <div class="rightsection2">
+            <div class="education">
+               <h3>Education</h3>
+               <div class="timeline-items">
+                  <div class="timeline-item">
+                     <div class="timeline-dot"></div>
+                     <div class="timeline-date">2020-21</div>
+                     <div class="timeline-content">
+                        <h5>S.S.C</h5>
+                        <p>Mujaffarpur, Bihar</p>
+                     </div>
+                  </div>
+
+                  <div class="timeline-item">
+                     <div class="timeline-dot"></div>
+                     <div class="timeline-date">2021-23</div>
+                     <div class="timeline-content">
+                        <h5>H.S.C</h5>
+                        <p>T.P Verma College, Narkatiaganj, Bihar</p>
+                     </div>
+                  </div>
+
+                  <div class="timeline-item">
+                     <div class="timeline-dot"></div>
+                     <div class="timeline-date">2023-present</div>
+                     <div class="timeline-content">
+                        <h5>B.S.C</h5>
+                        <p>Patkar Varde College, Mumbai, Maharashtra</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="thirdsection" id="Skills">
+         <h4>Skills</h4>
+         <div class="box">
+
+            <div class="vertical">
+               <div class="vertical-title">Programming Language</div>
+               <div class="vertical-desc">
+                  <ul>
+                     <li>Python</li>
+                     <li>Java</li>
+                     <li>R</li>
+                     <li>C++</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="vertical">
+               <div class="vertical-title">Spreadsheet</div>
+               <div class="vertical-desc">
+                  <ul>
+                     <li>MS Excel</li>
+                     <li>Google Sheet</li>
+                     <li>VBA</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="vertical">
+               <div class="vertical-title">Visualization Tools</div>
+               <div class="vertical-desc">
+                  <ul>
+                     <li>Power Bi</li>
+                     <li>Tableu</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="vertical">
+               <div class="vertical-title">Web Development</div>
+               <div class="vertical-desc">
+                  <ul>
+                     <li>HTML</li>
+                     <li>CSS</li>
+                     <li>Java Script</li>
+                     <li>DataBase</li>
+                     <li>Devops</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="vertical">
+               <div class="vertical-title">DataBases</div>
+               <div class="vertical-desc">
+                  <ul>
+                     <li>SQL</li>
+                     <li>MySQL</li>
+                     <li>Mongo DB</li>
+                     <li>HIVE</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="vertical">
+               <div class="vertical-title">Mathematics</div>
+               <div class="vertical-desc">
+                  <ul>
+                     <li>Inferential Stats with Python</li>
+                  </ul>
+               </div>
+            </div>
+
+
+         </div>
+      </section>
+      <section class="fourthsection" id="Projects">
+         <h4>Projects</h4>
+         <div class="box">
+            <div class="vertical">
+               <div class="vertical-title">SQL </div>
+               <div class="vertical-desc">
+                  <ul>
+                     <li>Database Schema and table creation based on Bigboss tv reality show</li>
+                     <li>Data Cleaning on World Layoffs Dataset.</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="vertical">
+               <div class="vertical-title">Python</div>
+               <div class="vertical-desc">
+                  <ul>
+                     <li>EDA on Zomato</li>
+                     <li>Univariate time series analysis on S&P500 stocks</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="vertical">
+               <div class="vertical-title">Web Development</div>
+               <div class="vertical-desc">
+                  <ul>
+                     <li>Netflix clone using HTML & CSS</li>
+                     <li>Spotify clone using HTML, CSS & Java Script</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="vertical">
+               <div class="vertical-title">Visualization</div>
+               <div class="vertical-desc">
+                  <ul>
+                     <li>Excel Dashboard on Sales Dataset</li>
+                     <li>Power Bi Dashboard on Amazon Prime</li>
+                  </ul>
+               </div>
+            </div>
+
+         </div>
+      </section>
+      <section class="fifthsection" id="Contact Me">
+
+      </section>
+
+      
+   </main>
+
+   <footer>
+      <div class="footer">
+         <div class="first">
+            Ankit's Portfoilio
+         </div>
+         <div class="second">
+            <ul>
+               <li>Home</li>
+               <li>About</li>
+               <li>Services</li>
+               <li>Contact</li>
+            </ul>
+         </div>
+         <div class="second">
+            <ul>
+               <li><a href="https://github.com/ankit24067" target="main"><img src="github.jpeg" alt="" width="50px"></a></li>
+               <li><a href="https://www.linkedin.com/in/ankit-pandey-84176b287" target="main"><img src="linkedin.png" alt="" width="50px"></a></li>
+               <li><a href="https://www.instagram.com/ankit_pandey991/" target="main"><img src="insta.jpeg" alt="" width="50px"></a></li>
+               
+            </ul>
+         </div>
+      </div>
+      <div class="footer-rights">
+         Copyrights&#169;ankitportfolio.com | All Rights Reserved
+      </div>
+   </footer>
+
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script>
+      var typed = new Typed('#element', {
+         strings: ['Data Enthusiast', 'Passionate Web Developer'],
+         typeSpeed: 50,
+      });
+   </script>
+   
+
+</body>
+
+</html>
