@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ankit Pandey — Data Analyst & AI Builder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ══ NAV ══ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">AP<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#charts">Insights</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <span class="avail-badge"><span class="avail-dot"></span>Open to work</span>
+        <a href="mailto:ankitpandey2005k@gmail.com" class="btn-nav">Hire Me</a>
+      </div>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#charts">Insights</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="home">
+    <div class="hero-noise"></div>
+    <div class="hero-glow g1"></div>
+    <div class="hero-glow g2"></div>
+    <div class="hero-wrap">
+
+      <div class="hero-left">
+        <div class="hero-tag fade-in"><span class="tag-icon">⚡</span> Data Analyst &amp; AI Builder</div>
+        <h1 class="hero-h1 fade-in delay-1">Turning<br/><span class="grad-text">raw data</span><br/>into decisions.</h1>
+        <p class="hero-sub fade-in delay-2">BSc grad in Data Science &amp; Business Analytics. I build dashboards, ML models, AI pipelines — and make complex data <em>actually useful</em>.</p>
+        <div class="hero-cta fade-in delay-3">
+          <a href="#work" class="btn-primary">See My Work</a>
+          <a href="https://github.com/ankit24067" target="_blank" class="btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+        <div class="hero-socials fade-in delay-4">
+          <a href="https://www.linkedin.com/in/ankietpandeey/" target="_blank" class="social-pill">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:ankitpandey2005k@gmail.com" class="social-pill">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email
+          </a>
+        </div>
+        <div class="hero-stats fade-in delay-5">
+          <div class="hstat"><span class="hstat-n" data-target="9.09" data-dec="2">0</span><span class="hstat-l">GPA</span></div>
+          <div class="hstat-div"></div>
+          <div class="hstat"><span class="hstat-n" data-target="2">0</span><span class="hstat-l">Internships</span></div>
+          <div class="hstat-div"></div>
+          <div class="hstat"><span class="hstat-n" data-target="30" data-suf="+">0</span><span class="hstat-l">GitHub Repos</span></div>
+          <div class="hstat-div"></div>
+          <div class="hstat"><span class="hstat-n">5★</span><span class="hstat-l">HackerRank SQL</span></div>
+        </div>
+      </div>
+
+      <!-- TONY STARK AVATAR -->
+      <div class="hero-right fade-in delay-2">
+        <div class="avatar-wrap">
+          <div class="avatar-orbit"></div>
+          <div class="avatar-orbit orbit-2"></div>
+          <div class="avatar-glow"></div>
+          <div class="avatar-frame">
+            <svg class="avatar-svg" viewBox="0 0 320 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="faceG" cx="44%" cy="32%" r="68%">
+                  <stop offset="0%" stop-color="#D49060"/>
+                  <stop offset="55%" stop-color="#BE7242"/>
+                  <stop offset="100%" stop-color="#A05C28"/>
+                </radialGradient>
+                <radialGradient id="neckG" cx="50%" cy="30%" r="60%">
+                  <stop offset="0%" stop-color="#C87848"/>
+                  <stop offset="100%" stop-color="#A05828"/>
+                </radialGradient>
+                <radialGradient id="reactorCore" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#AAFFFF"/>
+                  <stop offset="50%" stop-color="#00CFFF"/>
+                  <stop offset="100%" stop-color="#0088CC"/>
+                </radialGradient>
+                <filter id="rGlow"><feGaussianBlur stdDeviation="5"/></filter>
+                <filter id="rGlow2"><feGaussianBlur stdDeviation="2"/></filter>
+              </defs>
+
+              <!-- SUIT -->
+              <path d="M5 420 C5 310 58 268 110 250 L160 274 L210 250 C262 268 315 310 315 420Z" fill="#1A2540"/>
+              <path d="M5 420 C5 310 58 268 110 250 L118 262 C88 280 60 316 52 420Z" fill="#111A30"/>
+              <path d="M315 420 C315 310 262 268 210 250 L202 262 C232 280 260 316 268 420Z" fill="#111A30"/>
+              <!-- Shirt -->
+              <path d="M148 256 L160 284 L172 256Z" fill="#E8EEFF"/>
+              <!-- Collar left -->
+              <path d="M148 256 L116 248 L130 290 L160 284Z" fill="#EAEFFE" opacity="0.92"/>
+              <!-- Collar right -->
+              <path d="M172 256 L204 248 L190 290 L160 284Z" fill="#EAEFFE" opacity="0.92"/>
+              <!-- Lapel left -->
+              <path d="M116 248 L90 302 L134 310 L160 284Z" fill="#101C30"/>
+              <!-- Lapel right -->
+              <path d="M204 248 L230 302 L186 310 L160 284Z" fill="#101C30"/>
+              <!-- Suit buttons (single row, clean look) -->
+              <circle cx="160" cy="308" r="4" fill="#141F35"/><circle cx="160" cy="308" r="2" fill="#1C2E4A"/>
+              <circle cx="160" cy="326" r="4" fill="#141F35"/><circle cx="160" cy="326" r="2" fill="#1C2E4A"/>
+
+              <!-- ── ARC REACTOR ── -->
+              <!-- Outer ambient glow -->
+              <circle cx="160" cy="358" r="28" fill="#00CFFF" opacity="0.12" filter="url(#rGlow)">
+                <animate attributeName="opacity" values="0.12;0.22;0.12" dur="2.2s" repeatCount="indefinite"/>
+              </circle>
+              <!-- Housing plate -->
+              <circle cx="160" cy="358" r="18" fill="#090F1E"/>
+              <circle cx="160" cy="358" r="15.5" fill="#060C18"/>
+              <!-- Outer tech ring -->
+              <circle cx="160" cy="358" r="14" stroke="#1A4A6A" stroke-width="1.5" fill="none"/>
+              <!-- Glow ring -->
+              <circle cx="160" cy="358" r="11" stroke="#00CFFF" stroke-width="1.5" fill="none" opacity="0.7">
+                <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.2s" repeatCount="indefinite"/>
+              </circle>
+              <!-- Inner energy ring -->
+              <circle cx="160" cy="358" r="8" stroke="#00DFFF" stroke-width="2.5" fill="none" opacity="0.9">
+                <animate attributeName="stroke-width" values="2.5;1.5;2.5" dur="2.2s" repeatCount="indefinite"/>
+              </circle>
+              <!-- Core glow -->
+              <circle cx="160" cy="358" r="6" fill="#00CFFF" filter="url(#rGlow2)" opacity="0.8">
+                <animate attributeName="r" values="6;7;6" dur="2.2s" repeatCount="indefinite"/>
+              </circle>
+              <!-- Core bright center -->
+              <circle cx="160" cy="358" r="4" fill="url(#reactorCore)"/>
+              <circle cx="160" cy="358" r="2" fill="white" opacity="0.95"/>
+              <!-- Reactor chest light spill on suit -->
+              <ellipse cx="160" cy="350" rx="12" ry="8" fill="#00CFFF" opacity="0.06" filter="url(#rGlow)"/>
+
+              <!-- NECK -->
+              <path d="M142 246 Q160 257 178 246 L181 272 Q160 282 139 272Z" fill="url(#neckG)"/>
+
+              <!-- EARS -->
+              <ellipse cx="80" cy="182" rx="12" ry="16" fill="#B06838"/>
+              <ellipse cx="80" cy="182" rx="6.5" ry="10" fill="#C07848" opacity="0.55"/>
+              <ellipse cx="240" cy="182" rx="12" ry="16" fill="#B06838"/>
+              <ellipse cx="240" cy="182" rx="6.5" ry="10" fill="#C07848" opacity="0.55"/>
+
+              <!-- FACE -->
+              <ellipse cx="160" cy="178" rx="80" ry="88" fill="url(#faceG)"/>
+              <!-- Jaw sharpening — Tony has a more angular chin -->
+              <path d="M100 228 Q108 270 130 288 Q160 302 190 288 Q212 270 220 228" fill="url(#faceG)"/>
+              <!-- Subtle cheek highlights -->
+              <ellipse cx="116" cy="193" rx="20" ry="16" fill="#D49868" opacity="0.18"/>
+              <ellipse cx="204" cy="193" rx="20" ry="16" fill="#D49868" opacity="0.18"/>
+
+              <!-- HAIR — Tony Stark: slick, swept back, structured (NOT curly) -->
+              <!-- Side/base mass -->
+              <ellipse cx="160" cy="106" rx="84" ry="50" fill="#160900"/>
+              <!-- Top sweep - smooth, structured -->
+              <path d="M78 118 Q90 80 128 66 Q160 58 192 66 Q230 80 242 118 L238 126 Q205 104 160 102 Q115 104 82 126Z" fill="#160900"/>
+              <!-- Hair surface layer — slight sheen -->
+              <path d="M92 88 Q118 70 160 64 Q202 70 228 88 Q218 96 190 93 Q160 91 130 93 Q102 96 92 88Z" fill="#1E0E02"/>
+              <!-- Hairline — clean, defined (not fluffy like curly) -->
+              <path d="M90 118 Q108 94 140 80 Q160 74 180 80 Q212 94 230 118" stroke="#0E0600" stroke-width="2.5" fill="#160900"/>
+              <!-- Side hair — tight to face -->
+              <ellipse cx="84" cy="146" rx="14" ry="33" fill="#160900"/>
+              <ellipse cx="236" cy="146" rx="14" ry="33" fill="#160900"/>
+              <rect x="92" y="108" width="136" height="26" rx="13" fill="#160900"/>
+              <!-- A few swept strands on top for realism -->
+              <path d="M125 82 Q145 70 160 68 Q175 70 190 78" stroke="#1E0E02" stroke-width="5" stroke-linecap="round" fill="none"/>
+              <path d="M118 90 Q138 76 160 73" stroke="#1E0E02" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+              <!-- EYEBROWS — sharp, well-defined -->
+              <path d="M111 156 Q130 148 151 153" stroke="#0C0400" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+              <path d="M169 153 Q190 148 209 156" stroke="#0C0400" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+              <!-- Brow highlight -->
+              <path d="M113 155 Q130 148 149 152" stroke="#281400" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+              <path d="M171 152 Q190 148 207 155" stroke="#281400" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+
+              <!-- EYES — sharp, intense (Tony's signature) -->
+              <ellipse cx="133" cy="170" rx="19" ry="13" fill="#1A0900" opacity="0.22"/>
+              <ellipse cx="187" cy="170" rx="19" ry="13" fill="#1A0900" opacity="0.22"/>
+              <ellipse cx="133" cy="172" rx="18" ry="12" fill="#F0EAE2"/>
+              <ellipse cx="187" cy="172" rx="18" ry="12" fill="#F0EAE2"/>
+              <circle cx="134" cy="173" r="9.5" fill="#2E1600"/>
+              <circle cx="188" cy="173" r="9.5" fill="#2E1600"/>
+              <circle cx="134" cy="173" r="5" fill="#060200"/>
+              <circle cx="188" cy="173" r="5" fill="#060200"/>
+              <circle cx="139" cy="168" r="3.5" fill="white" opacity="0.92"/>
+              <circle cx="193" cy="168" r="3.5" fill="white" opacity="0.92"/>
+              <circle cx="130" cy="177" r="1.5" fill="white" opacity="0.3"/>
+              <circle cx="184" cy="177" r="1.5" fill="white" opacity="0.3"/>
+              <!-- Lower lid -->
+              <path d="M115 178 Q133 185 151 178" stroke="#9A5830" stroke-width="1" fill="none" opacity="0.35"/>
+              <path d="M169 178 Q187 185 205 178" stroke="#9A5830" stroke-width="1" fill="none" opacity="0.35"/>
+
+              <!-- BLINK -->
+              <ellipse cx="133" cy="172" rx="18" ry="1.5" fill="#BE7040">
+                <animate attributeName="ry" values="1.5;1.5;1.5;1.5;1.5;1.5;1.5;1.5;12;1.5;1.5;1.5;1.5;1.5;1.5;1.5;12;1.5;1.5;1.5" dur="8s" repeatCount="indefinite"/>
+              </ellipse>
+              <ellipse cx="187" cy="172" rx="18" ry="1.5" fill="#BE7040">
+                <animate attributeName="ry" values="1.5;1.5;1.5;1.5;1.5;1.5;1.5;1.5;12;1.5;1.5;1.5;1.5;1.5;1.5;1.5;12;1.5;1.5;1.5" dur="8s" repeatCount="indefinite"/>
+              </ellipse>
+
+              <!-- NOSE -->
+              <path d="M157 196 Q149 214 153 222 Q160 228 167 222 Q171 214 163 196" fill="#9A5828" opacity="0.38"/>
+              <ellipse cx="153" cy="221" rx="7" ry="4.5" fill="#844820" opacity="0.45"/>
+              <ellipse cx="167" cy="221" rx="7" ry="4.5" fill="#844820" opacity="0.45"/>
+              <circle cx="160" cy="218" r="4.5" fill="#D09060" opacity="0.18"/>
+
+              <!-- MOUTH — Tony's confident smirk (slight asymmetry, right side higher) -->
+              <path d="M140 237 Q158 250 180 238" stroke="#7A3C18" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <path d="M145 240 Q160 251 177 241 Q174 246 160 247 Q146 246 145 240Z" fill="white" opacity="0.52"/>
+              <path d="M142 235 Q152 231 160 232 Q169 231 179 237 Q170 241 160 242 Q150 241 142 235Z" fill="#7A3C18" opacity="0.52"/>
+              <!-- Smirk corner (slightly up on right) -->
+              <path d="M140 237 Q137 234 139 231" stroke="#9A5020" stroke-width="1.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+
+              <!-- ══ TONY STARK GOATEE ══ -->
+              <!-- Philtrum connector (small vertical strip under nose) -->
+              <rect x="156" y="224" width="8" height="10" rx="3" fill="#140800" opacity="0.55"/>
+              <!-- Mustache — thin, doesn't reach mouth corners (Tony's signature narrow mustache) -->
+              <path d="M142 231 Q152 227 160 228 Q168 227 178 231 Q175 237 160 238 Q145 237 142 231Z" fill="#140800" opacity="0.88"/>
+              <!-- Mustache inner highlight for shape -->
+              <path d="M148 232 Q160 229 172 232 Q169 236 160 237 Q151 236 148 232Z" fill="#1E1000" opacity="0.5"/>
+              <!-- Chin beard — iconic Tony triangular point -->
+              <path d="M149 252 Q154 248 160 249 Q166 248 171 252 Q170 264 165 274 Q162 281 160 283 Q158 281 155 274 Q150 264 149 252Z" fill="#140800" opacity="0.92"/>
+              <!-- Chin beard shaping highlight -->
+              <path d="M153 254 Q160 251 167 254 Q166 262 160 270 Q154 262 153 254Z" fill="#200E00" opacity="0.55"/>
+              <!-- NO side beard (clean cheeks — Tony always has this) -->
+            </svg>
+          </div>
+          <div class="chip chip-1">📊 Power BI</div>
+          <div class="chip chip-2">🤖 AI / LLM</div>
+          <div class="chip chip-3">🐍 Python</div>
+          <div class="chip chip-4">⚡ Spark</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ BY THE NUMBERS ══ -->
+  <section class="numbers-band">
+    <div class="numbers-inner">
+      <div class="nstat reveal"><span class="nstat-n" data-target="1500" data-suf="+">0</span><span class="nstat-l">Missing Values Resolved</span></div>
+      <div class="nstat-sep"></div>
+      <div class="nstat reveal delay-1"><span class="nstat-n" data-target="1000" data-suf="+">0</span><span class="nstat-l">Universities Analysed</span></div>
+      <div class="nstat-sep"></div>
+      <div class="nstat reveal delay-2"><span class="nstat-n" data-target="100" data-suf="+">0</span><span class="nstat-l">Learners Trained</span></div>
+      <div class="nstat-sep"></div>
+      <div class="nstat reveal delay-3"><span class="nstat-n" data-target="30" data-suf="+">0</span><span class="nstat-l">GitHub Projects</span></div>
+      <div class="nstat-sep"></div>
+      <div class="nstat reveal delay-4"><span class="nstat-n" data-target="3">0</span><span class="nstat-l">AI Tools Built</span></div>
+    </div>
+  </section>
+
+  <!-- ══ MARQUEE ══ -->
+  <div class="marquee-band">
+    <div class="marquee-track">
+      <span>Python</span><span class="sep">✦</span><span>SQL</span><span class="sep">✦</span>
+      <span>Power BI</span><span class="sep">✦</span><span>Machine Learning</span><span class="sep">✦</span>
+      <span>LangChain</span><span class="sep">✦</span><span>Apache Spark</span><span class="sep">✦</span>
+      <span>Scala</span><span class="sep">✦</span><span>LlamaIndex</span><span class="sep">✦</span>
+      <span>Pandas</span><span class="sep">✦</span><span>RAG Pipelines</span><span class="sep">✦</span>
+      <span>PostgreSQL</span><span class="sep">✦</span><span>Prompt Engineering</span><span class="sep">✦</span>
+      <span>Python</span><span class="sep">✦</span><span>SQL</span><span class="sep">✦</span>
+      <span>Power BI</span><span class="sep">✦</span><span>Machine Learning</span><span class="sep">✦</span>
+      <span>LangChain</span><span class="sep">✦</span><span>Apache Spark</span><span class="sep">✦</span>
+      <span>Scala</span><span class="sep">✦</span><span>LlamaIndex</span><span class="sep">✦</span>
+      <span>Pandas</span><span class="sep">✦</span><span>RAG Pipelines</span><span class="sep">✦</span>
+      <span>PostgreSQL</span><span class="sep">✦</span><span>Prompt Engineering</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ══ ABOUT ══ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-wrap">
+        <div class="about-left reveal">
+          <p class="sec-label">About</p>
+          <h2 class="sec-title">I don't just analyse data.<br/>I make it <span class="grad-text">tell a story.</span></h2>
+          <p class="about-body">I'm <strong>Ankit Pandey</strong> — a BSc grad in Data Science &amp; Business Analytics, currently working as a Data Analyst Intern at <strong>Mirraw Online Services</strong>. My work sits at the intersection of data engineering, AI tooling, and business intelligence.</p>
+          <p class="about-body">From building RAG pipelines with LangChain to designing root-cause dashboards in Power BI, I care about making data work for real decisions — not just look good on slides.</p>
+          <div class="about-links-row">
+            <a href="https://www.linkedin.com/in/ankietpandeey/" target="_blank" class="alink">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/ankit24067" target="_blank" class="alink">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="about-right reveal delay-1">
+          <div class="fact-card">
+            <span class="fact-icon">🎓</span>
+            <div>
+              <p class="fact-title">BSc Data Science &amp; Business Analytics</p>
+              <p class="fact-sub">School of DS &amp; BI &nbsp;·&nbsp; Jul 2023 – Jun 2026</p>
+              <p class="fact-gpa">CGPA 9.09 → 8.8</p>
+            </div>
+          </div>
+          <div class="fact-card">
+            <span class="fact-icon">💼</span>
+            <div>
+              <p class="fact-title">Data Analyst Intern</p>
+              <p class="fact-sub">Mirraw Online Service &nbsp;·&nbsp; Apr 2026 – Present</p>
+              <span class="current-tag">Current</span>
+            </div>
+          </div>
+          <div class="fact-card learning-card">
+            <span class="fact-icon">🚀</span>
+            <div>
+              <p class="fact-title">Currently Learning</p>
+              <div class="learning-pills">
+                <span>Apache Spark</span><span>Scala</span><span>MLOps</span><span>Advanced ML</span><span>Docker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SKILL MATRIX ══ -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="sec-header reveal">
+        <p class="sec-label">Skills</p>
+        <h2 class="sec-title">What I <span class="grad-text">know.</span></h2>
+      </div>
+      <div class="skill-matrix">
+        <div class="skill-col reveal">
+          <div class="skill-col-header advanced">Advanced</div>
+          <ul class="skill-list">
+            <li><span class="sk-icon">🗃️</span>SQL</li>
+            <li><span class="sk-icon">📊</span>Power BI</li>
+            <li><span class="sk-icon">🐍</span>Python</li>
+            <li><span class="sk-icon">📑</span>Excel</li>
+            <li><span class="sk-icon">💬</span>Prompt Engineering</li>
+            <li><span class="sk-icon">🗄️</span>MySQL</li>
+          </ul>
+        </div>
+        <div class="skill-col reveal delay-1">
+          <div class="skill-col-header proficient">Proficient</div>
+          <ul class="skill-list">
+            <li><span class="sk-icon">🤖</span>Machine Learning</li>
+            <li><span class="sk-icon">🔗</span>LangChain</li>
+            <li><span class="sk-icon">🦙</span>LlamaIndex</li>
+            <li><span class="sk-icon">🐘</span>PostgreSQL</li>
+            <li><span class="sk-icon">🍃</span>MongoDB</li>
+            <li><span class="sk-icon">📈</span>Tableau</li>
+          </ul>
+        </div>
+        <div class="skill-col reveal delay-2">
+          <div class="skill-col-header learning">Learning</div>
+          <ul class="skill-list">
+            <li><span class="sk-icon">⚡</span>Apache Spark</li>
+            <li><span class="sk-icon">♟️</span>Scala</li>
+            <li><span class="sk-icon">🐳</span>Docker</li>
+            <li><span class="sk-icon">⚙️</span>MLOps</li>
+            <li><span class="sk-icon">🧪</span>Feature Engineering</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SELECTED WORK ══ -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="sec-header reveal">
+        <p class="sec-label">Selected Work</p>
+        <h2 class="sec-title">Things I've <span class="grad-text">built.</span></h2>
+      </div>
+      <div class="work-featured">
+        <div class="work-card featured reveal" style="--accent-clr:#00CFFF">
+          <div class="wc-top"><span class="wc-num">01</span><a href="https://github.com/ankit24067/Netflix-Content-Strategy-Analysis" target="_blank" class="wc-link">↗</a></div>
+          <h3 class="wc-title">Netflix Content Strategy Analysis</h3>
+          <p class="wc-desc">Discovered that <strong>68% of Netflix's catalog was added after 2015</strong> — revealing a platform strategy shift toward original content. Analysed 8,807 titles across genres, ratings, and regions using 12 custom Seaborn/Matplotlib visualisations.</p>
+          <div class="wc-impact"><span>📈 8,807 Titles Analysed</span><span>🌍 68% Post-2015 Growth</span></div>
+          <div class="wc-tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>EDA</span></div>
+        </div>
+        <div class="work-card featured reveal delay-1" style="--accent-clr:#8B5CF6">
+          <div class="wc-top"><span class="wc-num">02</span><a href="https://github.com/ankit24067/Global-University-Success-Analysis" target="_blank" class="wc-link">↗</a></div>
+          <h3 class="wc-title">Global University Success Analysis</h3>
+          <p class="wc-desc">Found a <strong>0.6 correlation between rankings and female student representation</strong> — a finding that challenges assumptions about elite institutions. Cleaned 1,500+ nulls, unified 500+ naming discrepancies across 1,000+ universities in 50 countries.</p>
+          <div class="wc-impact"><span>🏫 1,000+ Universities</span><span>📊 0.6 Gender Correlation</span></div>
+          <div class="wc-tags"><span>Power BI</span><span>DAX</span><span>Data Cleaning</span><span>Dashboard</span></div>
+        </div>
+      </div>
+      <div class="work-grid">
+        <div class="work-card small reveal" style="--accent-clr:#10B981">
+          <div class="wc-top"><span class="wc-num">03</span><a href="https://github.com/ankit24067/laptop-rag-ai-assistant" target="_blank" class="wc-link">↗</a></div>
+          <h3 class="wc-title">Laptop RAG AI Assistant</h3>
+          <p class="wc-desc">Built a natural language Q&amp;A system answering spec questions in under 2 seconds — using RAG to ground LLM responses in verified product data.</p>
+          <div class="wc-tags"><span>Python</span><span>LangChain</span><span>LlamaIndex</span><span>RAG</span></div>
+        </div>
+        <div class="work-card small reveal delay-1" style="--accent-clr:#F59E0B">
+          <div class="wc-top"><span class="wc-num">04</span><a href="https://github.com/ankit24067/Reality-Show-Database-Management-SQL" target="_blank" class="wc-link">↗</a></div>
+          <h3 class="wc-title">Reality Show DB Management</h3>
+          <p class="wc-desc">Designed a 5-entity relational schema from scratch, wrote 20+ queries including recursive subqueries, proved 100% data integrity across all constraints.</p>
+          <div class="wc-tags"><span>SQL</span><span>MySQL</span><span>ER Diagram</span></div>
+        </div>
+        <div class="work-card small reveal delay-2" style="--accent-clr:#EC4899">
+          <div class="wc-top"><span class="wc-num">05</span><a href="https://github.com/ankit24067/financialAgent" target="_blank" class="wc-link">↗</a></div>
+          <h3 class="wc-title">Financial AI Agent</h3>
+          <p class="wc-desc">Shipped an AI agent that summarises a 20-page financial report in under 30 seconds — replacing a manual 2-hour analysis process.</p>
+          <div class="wc-tags"><span>Python</span><span>LLM</span><span>AI Agent</span></div>
+        </div>
+        <div class="work-card small reveal delay-3" style="--accent-clr:#00CFFF">
+          <div class="wc-top"><span class="wc-num">06</span><a href="https://github.com/ankit24067/Zomato_Data_Analysis" target="_blank" class="wc-link">↗</a></div>
+          <h3 class="wc-title">Zomato Data Analysis</h3>
+          <p class="wc-desc">Mapped 51,000+ restaurant records to surface that North Indian cuisine dominates listings but underperforms on ratings — a clear market gap.</p>
+          <div class="wc-tags"><span>Python</span><span>Pandas</span><span>Seaborn</span></div>
+        </div>
+      </div>
+      <div class="work-more reveal"><a href="https://github.com/ankit24067" target="_blank" class="btn-ghost">View all 30+ repos on GitHub →</a></div>
+    </div>
+  </section>
+
+  <!-- ══ TASTE OF MY WORK (CHARTS) ══ -->
+  <section class="section section-dark" id="charts">
+    <div class="container">
+      <div class="sec-header reveal">
+        <p class="sec-label">Insights</p>
+        <h2 class="sec-title">A taste of my <span class="grad-text">work.</span></h2>
+        <p class="sec-sub">Real data from the Netflix Content Strategy Analysis project.</p>
+      </div>
+      <div class="charts-grid">
+        <div class="chart-card reveal">
+          <p class="chart-label">📈 Netflix Titles Added Per Year</p>
+          <canvas id="chartBar" height="220"></canvas>
+        </div>
+        <div class="charts-right">
+          <div class="chart-card reveal delay-1">
+            <p class="chart-label">🎬 Content Type Split</p>
+            <canvas id="chartDoughnut" height="200"></canvas>
+          </div>
+          <div class="chart-card insight-card reveal delay-2">
+            <p class="chart-label">💡 Key Finding</p>
+            <p class="insight-text">"Content additions peaked in <strong>2019 at 1,073 titles</strong> — a 163% jump in 4 years — then normalised post-COVID, signalling a strategic shift from volume to quality."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ GITHUB ACTIVITY ══ -->
+  <section class="section" id="github">
+    <div class="container">
+      <div class="sec-header reveal">
+        <p class="sec-label">Activity</p>
+        <h2 class="sec-title">GitHub <span class="grad-text">heatmap.</span></h2>
+      </div>
+      <div class="github-wrap reveal">
+        <div class="calendar"></div>
+        <p class="github-link-text">
+          <a href="https://github.com/ankit24067" target="_blank" class="alink">
+            View full profile → github.com/ankit24067
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CASE STUDY ══ -->
+  <section class="section section-dark" id="casestudy">
+    <div class="container">
+      <div class="sec-header reveal">
+        <p class="sec-label">Case Study</p>
+        <h2 class="sec-title">Netflix Content <span class="grad-text">Deep Dive.</span></h2>
+      </div>
+      <div class="cs-wrap">
+        <div class="cs-col reveal">
+          <div class="cs-block">
+            <span class="cs-step">01</span>
+            <h4>Problem</h4>
+            <p>How does Netflix's content catalog evolve across genres, ratings, and regions — and what does the data reveal about platform strategy?</p>
+          </div>
+          <div class="cs-block">
+            <span class="cs-step">02</span>
+            <h4>Approach</h4>
+            <ul>
+              <li>Cleaned 8,807 rows — handled nulls, fixed date formats, unified category labels</li>
+              <li>Ran statistical summaries across release year, duration, rating, and country</li>
+              <li>Built 12 visualisations across genre trends, regional production, and rating distributions</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cs-col reveal delay-1">
+          <div class="cs-block findings">
+            <span class="cs-step">03</span>
+            <h4>Key Findings</h4>
+            <div class="finding-row"><span class="finding-icon">📊</span><span>68% of catalog added post-2015 — rapid library expansion phase</span></div>
+            <div class="finding-row"><span class="finding-icon">🌍</span><span>US leads at 36% but non-English content growing 22% YoY</span></div>
+            <div class="finding-row"><span class="finding-icon">🎬</span><span>Movies = 69%, TV Shows = 31% of total catalog</span></div>
+            <div class="finding-row"><span class="finding-icon">⭐</span><span>TV-MA rated content leads at 36% of all titles</span></div>
+            <div class="finding-row"><span class="finding-icon">📅</span><span>2019 was peak year — 1,073 titles added in a single year</span></div>
+          </div>
+          <div class="cs-tags">
+            <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>Jupyter</span>
+          </div>
+          <a href="https://github.com/ankit24067/Netflix-Content-Strategy-Analysis" target="_blank" class="btn-ghost" style="width:fit-content; margin-top:1rem;">View Repository ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE ══ -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="sec-header reveal">
+        <p class="sec-label">Experience</p>
+        <h2 class="sec-title">Where I've <span class="grad-text">worked.</span></h2>
+      </div>
+      <div class="exp-list">
+        <div class="exp-card reveal">
+          <div class="exp-left"><div class="exp-logo">M</div><div class="exp-line"></div></div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <div><h3 class="exp-role">Data Analyst Intern</h3><p class="exp-company">Mirraw Online Service Pvt. Ltd.</p></div>
+              <div class="exp-meta"><span class="exp-date">Apr 2026 – Present</span><span class="current-tag">Current</span></div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Building an AI-based analysis &amp; team-specific recommendation system to surface actionable insights for cross-functional teams.</li>
+              <li>Conducting SOR root cause analysis — identifying failure patterns and defining action plans to resolve recurring issues.</li>
+              <li>Designing and maintaining dashboards to monitor key business metrics across departments.</li>
+              <li>Fetching and transforming data from the company's internal database for cross-functional team decision-making.</li>
+            </ul>
+            <div class="exp-tags"><span>Power BI</span><span>SQL</span><span>Python</span><span>AI/ML</span><span>Dashboards</span></div>
+          </div>
+        </div>
+        <div class="exp-card reveal delay-1">
+          <div class="exp-left"><div class="exp-logo">IL</div><div class="exp-line"></div></div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <div><h3 class="exp-role">Data Science Intern</h3><p class="exp-company">Infinity Learning</p></div>
+              <span class="exp-date">Jun 2024 – Jan 2025</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Scraped and cleaned enrollment data — end-to-end pipeline covering missing values, duplicates, and standardisation.</li>
+              <li>Cohort analysis: 25–34 age group led at ~42%, 58:42 gender split. Delivered via metric dashboards to guide targeting.</li>
+              <li>Designed Python curriculum (Pandas, NumPy, Matplotlib, Seaborn) for 100+ professionals and students.</li>
+            </ul>
+            <div class="exp-tags"><span>Python</span><span>EDA</span><span>Cohort Analysis</span><span>Excel</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="contact-wrap">
+        <div class="contact-left reveal">
+          <p class="sec-label">Contact</p>
+          <h2 class="contact-big">Let's build<br/><span class="grad-text">something.</span></h2>
+          <p class="contact-sub">Open to full-time roles, internships, and interesting collaborations. I reply within 24 hours.</p>
+          <div class="contact-socials">
+            <a href="https://github.com/ankit24067" target="_blank" class="csoc">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ankietpandeey/" target="_blank" class="csoc">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal delay-1">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Your name" required/>
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="your@email.com" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">
+              <span id="formBtnText">Send Message →</span>
+            </button>
+            <p class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Designed &amp; built by <strong>Ankit Pandey</strong> · 2026</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
